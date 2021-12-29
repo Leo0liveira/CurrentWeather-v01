@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <title> Compass UOL - Weather </title>
+    </head>
+        <body>
+            <div>
+                <h1 class="title">Weather Tracker</h1>
+            </div>
+            <div id="SearchLoc" class="SearchLoc">
+                    <input type="text" class="input_text"placeholder="Busque uma cidade..." id="search"/>
+                    <input type="submit" value="Buscar" class="btn" id="buscar"></input>
+            </div>
+            <div class="weather_card" id="weather_card">
+                <div class="container">
+                            <div class="city_input">
+                                <h6 class="city_inputText" id = "city_inputText"></h6>
+                            </div>
+                    <div class="weather_inputs">
+                        <span class="temperature_input" id="temperature_input"></span>
+                        <h6 class="weather_situation" id="weather_situation"></h6>
+                    </div>
+                    <div class="weather_stats">
+                        <div class="stats_container"">
+                            <div><i class="min_temp" id="min_temp"></i> <span class="ms-1"></span></div>
+                            <div><i class="max_temp" id="max_temp"></i> <span class="ms-1"></span></div>
+                            <div><i class="feels_like" id="feels_like"></i> <span class="ms-1"></span></div>   
+                            <div><i class="wind_speed" id="wind_speed"></i> <span class="ms-1"></span></div>
+                            <div><i class="humidity" id="humidity"></i> <span class="ms-1"></span></div>               
+                        </div>
+                        <div class="image_card">
+                            <img class="image" id="image" style="border-radius: 5px;"/> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="./getWeather.js"></script>
+        </body>
+</html>
